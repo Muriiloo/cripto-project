@@ -82,6 +82,23 @@
     margin: 14px 0;
     border-radius: 8px;
   }
+
+  .logo{
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+  }
+
+  .logo:hover{
+    transform: scale(1.5);
+    z-index: 99;
+  }
+
+  .name{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
   
   /* RESPONSIVIDADE TABELA */
   @media screen and (max-width: 600px){
@@ -132,6 +149,11 @@
     td:last-child,
     th:last-child{
       border-radius: 0;
+    }
+
+    .name{
+      display: flex;
+      justify-content: end;
     }
   
   }
